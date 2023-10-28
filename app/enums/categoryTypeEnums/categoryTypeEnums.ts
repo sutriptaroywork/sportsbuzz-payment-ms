@@ -1,0 +1,7 @@
+export enum CategoryTypeEnums {
+  CRICKET = "CRICKET",
+  FOOTBALL = "FOOTBALL",
+  KABADDI = "KABADDI",
+  BASEBALL = "BASEBALL",
+  BASE = "BASKETBALL",
+}

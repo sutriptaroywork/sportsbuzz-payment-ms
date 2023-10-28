@@ -1,0 +1,40 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es2021",
+    "lib": ["es2021", "esnext.asynciterable"],
+    "typeRoots": ["node_modules/@types"],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "pretty": true,
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "dist",
+    "allowJs": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "baseUrl": "./app",
+    "paths": {
+      "@/*": ["*"],
+      "@/app/*": ["/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@daos/*": ["src/daos/*"],
+      "@dtos/*": ["src/dtos/*"],
+      "@services/*": ["src/services/*"],
+      "@routes/*": ["src/routes/*"],
+      "@models/*": ["models/*"],
+      "@middlewares/*": ["middlewares/*"],
+      "@enums/*": ["enums/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@databaseConfig/*": ["databaseConfig/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["./app/**/*"]
+}

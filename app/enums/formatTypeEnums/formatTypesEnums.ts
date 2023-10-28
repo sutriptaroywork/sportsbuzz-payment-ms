@@ -1,0 +1,12 @@
+export enum FormatTypesEnums {
+  T10 = "T10",
+  T20 = "T20",
+  ODI = "ODI",
+  TEST = "TEST",
+  BASEBALL = "BASEBALL",
+  BALL100 = "100BALL",
+  FOOTBALL = "FOOTBALL",
+  BASKETBALL = "BASKETBALL",
+  KABADDI = "KABADDI",
+  FIRSTCLASS = "FIRSTCLASS",
+}

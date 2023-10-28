@@ -1,0 +1,52 @@
+import { CategoryTypeEnums } from "@/enums/categoryTypeEnums/categoryTypeEnums";
+import { FormatTypesEnums } from "@/enums/formatTypeEnums/formatTypesEnums";
+import { MatchProviderTypesEnums } from "@/enums/matchProviderTypesEnums/matchProviderTypeEnums";
+import { MatchStatusTypeEnums } from "@/enums/matchStatusTypeEnums/matchStatusTypeEnums";
+import { MatchTossWinnerActionTypeEnums } from "@/enums/matchTossWinnerActTypesEnums/matchTossWinnerActTypesEnums";
+import { ObjectId } from "mongodb";
+import { PlayerRole } from "../playerRole/playerRoleInterface";
+import { TeamInterface } from "../team/teamInterface";
+
+export interface MatchAttributes {
+  _id: ObjectId;
+  sKey: string;
+  eFormat: FormatTypesEnums;
+  sName: string;
+  sSponsoredText: string;
+  sSeasonKey: string;
+  sVenue: string;
+  eStatus: MatchStatusTypeEnums;
+  dStartDate: Date;
+  oHomeTeam: TeamInterface;
+  oAwayTeam: TeamInterface;
+  sWinning: string;
+  iTossWinnerId: ObjectId;
+  eTossWinnerAction: MatchTossWinnerActionTypeEnums;
+  bMatchOnTop: boolean;
+  eCategory: CategoryTypeEnums;
+  sInfo: string;
+  nLatestInningNumber: number;
+  aPlayerRole: Array<PlayerRole>;
+  bScorecardShow: boolean;
+  sLeagueText: string;
+  sSeasonName: string;
+  nMaxTeamLimit: number;
+  iSeriesId: ObjectId;
+  iSeasonId: ObjectId;
+  bDisabled: boolean;
+  eProvider: MatchProviderTypesEnums;
+  bLineupsOut: boolean;
+  sFantasyPost: string;
+  sStreamUrl: string;
+  nRankCount: number;
+  nPrizeCount: number;
+  nWinDistCount: number;
+  dWinDistAt: Date;
+  sStatusNote: string;
+  sExternalId: string;
+  nPrice: number;
+  isMegaContest: boolean;
+
+  updatedAt: Date;
+  createdAt: Date;
+}

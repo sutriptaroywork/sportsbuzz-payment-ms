@@ -1,0 +1,6 @@
+export enum MatchProviderTypesEnums {
+  SPORTSRADAR = "SPORTSRADAR",
+  CUSTOM = "CUSTOM",
+  ENTITYSPORT = "ENTITYSPORT",
+  GOALSERVE = "GOALSERVE",
+}
